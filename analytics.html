@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analytics</title>
+  <link rel="icon" href="assets/images/Logo.png">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+<div class="dashboard">
+  <div class="sidebar">
+    <h2>Nexora</h2>
+    <ul>
+       <li><a href="dashboard.html"><i class="fa-solid fa-house"></i> Dashboard</a></li>
+       <li><a href="tasks.html"><i class="fa-solid fa-list-check"></i> Tasks</a></li>
+       <li><a href="notes.html"><i class="fa-solid fa-note-sticky"></i> Notes</a></li>
+       <li><a href="expenses.html"><i class="fa-solid fa-wallet"></i> Expenses</a></li>
+       <li><a href="analytics.html" class="active"><i class="fa-solid fa-chart-pie"></i> Analytics</a></li>
+    </ul>
+  </div>
+  <div class="main">
+    <h1>Analytics</h1>
+    <canvas id="myChart"></canvas>
+  </div>
+</div>
+<footer style="
+margin-top:40px;
+text-align:center;
+opacity:0.7;
+">
+Nexora OS © 2026
+</footer>
+<script src="js/charts.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexora Dashboard</title>
+  <link rel="icon" href="assets/images/Logo.png">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<div class="dashboard">
+  <div class="sidebar">
+    <h2>Nexora</h2>
+    <ul>
+       <li><a href="dashboard.html" class="active"><i class="fa-solid fa-house"></i> Dashboard</a></li>
+       <li><a href="tasks.html"><i class="fa-solid fa-list-check"></i> Tasks</a></li>
+       <li><a href="notes.html"><i class="fa-solid fa-note-sticky"></i> Notes</a></li>
+       <li><a href="expenses.html"><i class="fa-solid fa-wallet"></i> Expenses</a></li>
+       <li><a href="analytics.html"><i class="fa-solid fa-chart-pie"></i> Analytics</a></li>
+    </ul>
+    <button onclick="logout()">Logout</button>
+  </div>
+  <div class="main">
+    <div class="topbar">
+      <h1>Welcome Back</h1>
+      <button id="themeBtn">Dark Mode</button>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <h3>Tasks</h3>
+        <p id="taskCount">0</p>
+      </div>
+      <div class="card">
+        <h3>Focus Time</h3>
+        <p id="timer">25:00</p>
+        <button onclick="startTimer()">
+        Start
+        </button>
+        <button onclick="resetTimer()">
+        Reset
+        </button>
+      </div>
+      <div class="card">
+        <h3>Expenses</h3>
+        <p>₹5000</p>
+      </div>
+      <div class="card">
+        <h3>Daily Quote</h3>
+        <p id="quote">Loading...</p>
+      </div>
+      <div class="card">
+        <h3>Weather</h3>
+        <p id="weather">Loading...</p>
+      </div>
+      <div class="card">
+        <h3>User</h3>
+        <p id="userDisplay"></p>
+      </div>
+      </div>
+      <div class="card">
+        <h3>Current Time</h3>
+        <p id="clock"></p>
+      </div>
+      <div class="card">
+        <h3>Daily Streak</h3>
+        <p id="streak">0 Days</p>
+      </div>
+    </div>
+    <div class="task-section">
+      <h2>Task Manager</h2>
+      <input type="text" id="taskInput" placeholder="Enter task">
+      <button onclick="addTask()">Add Task</button>
+      <ul id="taskList"></ul>
+    </div>
+    <div class="chart-box">
+      <canvas id="myChart"></canvas>
+    </div>
+  </div>
+</div>
+<footer style="
+margin-top:40px;
+text-align:center;
+opacity:0.7;
+">
+Nexora OS © 2026
+</footer>
+<script src="js/notifications.js"></script>
+<script src="js/tasks.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/charts.js"></script>
+<script src="js/timer.js"></script>
+<script src="js/quotes.js"></script>
+<script src="js/quote.js"></script>
+<script src="js/weather.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/clock.js"></script>
+<script src="js/streak.js"></script>
+<script src="js/user.js"></script>
+</body>
+</html>
